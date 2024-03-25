@@ -9,6 +9,9 @@ public class PermutationSansTiers {
     byte b = 101;
 
     // Votre essai ici
+    a ^= b;
+    b ^= a;
+    a ^= b;
 
     assertEquals(101, a);
     assertEquals(99, b);
